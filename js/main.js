@@ -7,11 +7,10 @@ const gameLevel= document.getElementById('difficulty');
 
 button.addEventListener('click',
  function(){
-    
+    button.disabled=true;
     for(let i = 1; i <= 100; i++){
     const createdElement= newElements('div', 'box', i, 'azure');
     bigContainer.append(createdElement);
 }
+    
 })
-
-
